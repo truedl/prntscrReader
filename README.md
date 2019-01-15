@@ -13,12 +13,16 @@ python prntscrReader.py
 
 3) We will see this
 <b>Screenshot</b>
+<img src="https://raw.githubusercontent.com/truedl/prntscrReader/master/screenshots/aa.png">
 
 3.1) Now write number of URLs to generate
 <b>Screenshot</b>
+<img src="https://raw.githubusercontent.com/truedl/prntscrReader/master/screenshots/b.png">
 
 3.2) After this the program will start and you will see something like this
 <b>Screenshot</b>
+<img src="https://raw.githubusercontent.com/truedl/prntscrReader/master/screenshots/c.png">
 
 3.3) Then the program will stop and you get your images in "images" folder
 <b>Screenshot</b>
+<img src="https://raw.githubusercontent.com/truedl/prntscrReader/master/screenshots/d.png">
