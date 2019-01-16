@@ -60,11 +60,11 @@ if SCNT > 0:
                 break
         URLS.append(L)
         print(f'[@] URL WAS GENERATED [{x+1}/{SCNT}]')
-    print(f'[@] CUTTING TO BLOCKS...')
+    print('[@] CUTTING TO BLOCKS...')
     DPB = int(len(URLS)/TU)
     for x in range(int(len(URLS)/DPB)):
         BLOCKS.append(URLS[DPB*x:DPB*x+DPB])
-    BLOCKS = BLOCKS[:int(TU)]
+    BLOCKS = BLOCKS[:TU]
     i = 0
     for x in BLOCKS:
         i += len(x)
