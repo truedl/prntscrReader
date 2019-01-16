@@ -17,7 +17,7 @@ def pg(block, t):
             _img = html.fromstring(request.urlopen(f'https://prnt.sc/{x}').read()).xpath('/html/body/div[3]/div/img/@src')[0]
             QUEUE[t].append([_img, x])
         except:
-            print(f'[@ THREAD {t}] Invaild [{x}]')
+            print(f'[@ THREAD {t}] Invalid [{x}]')
     TB += 1
     if len(BLOCKS) == TB:
         print(f'[@ THREAD {t}] All Blocks completed. The program will stop when all screenshots will be saved in the folder...')
