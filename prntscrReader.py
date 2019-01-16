@@ -5,11 +5,14 @@ from urllib import request
 from time import sleep
 from lxml import html
 
+# Headers
 _Oheaders = request.build_opener()
 _Oheaders.addheaders = [('User-Agent','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36')]
 request.install_opener(_Oheaders)
 
+# PG Function: Main Progress Function
 def pg(block, t):
+    """ Processing screenshot URLs and check if they valid or not, if valid the image added to queue """
     global TB, QUIT
     for x in block:
         print(f'[@ THREAD {t}] Processing https://prnt.sc/{x}...')
@@ -24,7 +27,9 @@ def pg(block, t):
         sleep(.5)
         QUIT = True
 
+# IMPI Function: Import Images Function
 def impi(t):
+    """ Check the queue and if new images provided it will import them to the "images" folder """
     while True:
         if QUIT and len(QUEUE[t]) == 0:
             break
@@ -37,14 +42,13 @@ def impi(t):
                 QUEUE[t] = QUEUE[t][1:]
         sleep(.1)
 
-TB = 0
-QUIT = False
-L = ''
-TU = int(cpu_count()/2)
-URLS = []
-VAILD = []
-BLOCKS = []
-QUEUE = []
+TB = 0 # Total Blocks (Int)
+QUIT = False # QUIT Variable (Bool)
+L = '' # Used to contain some time-limited information (String)
+TU = int(cpu_count()/2) # TU(Threads-Use) Actully split thread-count and uses *2 (Example: TU=4, Actully 8 Will be used) (Int)
+URLS = [] # Array of URLs (Array)
+BLOCKS = [] # Array of BLOCKS (Array)
+QUEUE = [] # Images QUEUE (Array)
 SCNT = int(input('How many URLs you want to generate?: '))
 if SCNT > 0:
     for x in range(SCNT):
