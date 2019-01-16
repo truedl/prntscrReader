@@ -45,9 +45,9 @@ URLS = []
 VAILD = []
 BLOCKS = []
 QUEUE = []
-SCNT = input('How many URLs you want to generate?: ')
-if int(SCNT) > 0:
-    for x in range(int(SCNT)):
+SCNT = int(input('How many URLs you want to generate?: '))
+if SCNT > 0:
+    for x in range(SCNT):
         L = ''
         while True:
             for y in range(6):
