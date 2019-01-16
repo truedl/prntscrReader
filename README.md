@@ -25,7 +25,7 @@ python prntscrReader.py
 
 3.2. After this the program will start and you will see something like this<br/>
 <b>Screenshot</b><br/>
-<img src="https://raw.githubusercontent.com/truedl/prntscrReader/master/screenshots/c.png">
+<img src="https://raw.githubusercontent.com/truedl/prntscrReader/master/screenshots/cc.png">
 
 3.3. Then the program will stop and you get your images in "images" folder<br/>
 <b>Screenshot</b><br/>
