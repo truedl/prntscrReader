@@ -2,7 +2,7 @@
 Multi-threading screenshots reader from prntscr
 
 # What does the script do?
-The script reads random screenshots from prntscr with multi-threading system
+The script reads random screenshots from prntscr with multi-threading system and save them at "images" folder
 
 # How to use it?
 1. Download project from github
