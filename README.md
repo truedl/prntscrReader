@@ -1,8 +1,8 @@
 # prntscrReader
-Multi-threading photo reader from prntscr
+Multi-threading screenshots reader from prntscr
 
 # What does the script do?
-The script reads random photos from prntscr
+The script reads random screenshots from prntscr with multi-threading system
 
 # How to use it?
 1) Download project from github
