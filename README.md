@@ -7,11 +7,11 @@ The script reads random screenshots from prntscr with multi-threading system and
 # How to use it?
 1. Download project from github
 2. Install all required modules with pip
-```
-pip install psutil lxml
+```batch
+py -m pip install psutil lxml
 ```
 2.1. Run prntscrReader.py with python
-```
+```batch
 py prntscrReader.py
 ```
 
