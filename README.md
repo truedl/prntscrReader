@@ -12,7 +12,7 @@ pip install psutil lxml
 ```
 2.1. Run prntscrReader.py with python
 ```
-python prntscrReader.py
+py prntscrReader.py
 ```
 
 3. We will see this<br/>
